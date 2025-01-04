@@ -29,6 +29,7 @@
         pkgs.curl
         pkgs.jq
         pkgs.gnumake
+        pkgs.vscode
       ];
 
       homebrew = {
@@ -48,6 +49,8 @@
           "wireshark"
         ];
         onActivation.cleanup = "zap";
+        onActivation.autoUpdate = true;
+        onActivation.upgrade = true;
       };
       
       fonts.packages = [
@@ -73,6 +76,24 @@
         ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
       done
       '';
+      
+      system.defaults = {
+        dock.autohide = true;
+        dock.persistent-apps = [
+          "/Applications/Microsoft Teams.app"
+          "/Applications/Microsoft Outlook.app"
+          "/Applications/Google Chrome.app"
+          "/Applications/Citrix Secure Access.app"
+          "/Applications/Self Service.app"
+          "${pkgs.obsidian}/Applications/Obsidian.app"
+          "/Applications/Visual Studio Code.app"
+          "/Applications/Warp.app"
+        ];
+        finder.FXPreferredViewStyle = "clmv";
+        NSGlobalDomain.AppleICUForce24HourTime = true;
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.KeyRepeat = 2;
+      };
 
       services.nix-daemon.enable = true;
       nix.settings.experimental-features = "nix-command flakes";
