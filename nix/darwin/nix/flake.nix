@@ -34,6 +34,10 @@
 
       homebrew = {
         enable = true;
+        brews = [
+          "podman-compose"
+          "thefuck"
+        ];
         casks = [
           "amethyst"
           "atom"
@@ -42,11 +46,11 @@
           "font-fira-code"
           "font-hack-nerd-font"
           "iterm2"
-          "podman-desktop"
           "postman"
           "powershell"
           "warp"
           "wireshark"
+          "podman-desktop"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
@@ -80,6 +84,7 @@
       system.defaults = {
         dock.autohide = true;
         dock.persistent-apps = [
+          "/System/Applications/Launchpad.app"
           "/Applications/Microsoft Teams.app"
           "/Applications/Microsoft Outlook.app"
           "/Applications/Google Chrome.app"
