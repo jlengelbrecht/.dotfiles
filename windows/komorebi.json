@@ -1,0 +1,194 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.38/schema.json",
+  "app_specific_configuration_path": null,
+  "cross_monitor_move_behaviour": "Insert",
+  "window_hiding_behaviour": "Cloak",
+  "default_workspace_padding": 20,
+  "default_container_padding": 20,
+  "floating_applications": [
+    {
+      "kind": "Title",
+      "id": "Write:",
+      "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Exe",
+      "id": "obs64.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "PicView.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "prismlauncher.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Yasb_themes.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Class",
+      "id": "RarReminder",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Class",
+      "id": "BootstrapUpdateUIClass",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "steam.exe",
+      "matching_strategy": "Legacy"
+    },
+    {
+      "kind": "Exe",
+      "id": "steamwebhelper.exe",
+      "matching_strategy": "Legacy"
+    },
+    {
+      "kind": "Exe",
+      "id": "heroic.exe",
+      "matching_strategy": "Legacy"
+    },
+    {
+      "kind": "Exe",
+      "id": "Battle.net.exe",
+      "matching_strategy": "Legacy"
+    },
+    {
+      "kind": "Exe",
+      "id": "Yasb.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "mouse_follows_focus": false,
+  "transparency": false,
+  "transparency_alpha": 240,
+  "transparency_ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "YouTube",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Picture",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Media Player",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "obs64.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "animation": {
+    "enabled": false,
+    "fps": 120,
+    "duration": 400,
+    "style": {
+      "movement": "EaseOutBack",
+      "transparency": "Linear"
+    }
+  },
+  "border": true,
+  "border_implementation": "Komorebi",
+  "border_style": "System",
+  "border_width": 3,
+  "border_colours": {
+    "single": "#94e2d5",
+    "unfocused": "#45475a",
+    "floating": "#fab387",
+    "stack": "#cba6f7"
+  },
+  "stackbar": {
+    "height": 25,
+    "mode": "Never",
+    "tabs": {
+      "width": 125,
+      "focused_text": "#74c7ec",
+      "unfocused_text": "#cdd6f4",
+      "background": "#1e1e2e",
+      "font_family": "JetBrainsMono Nerd Font",
+      "font_size": 14
+    }
+  },
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "III",
+          "layout": "HorizontalStack"
+        },
+        {
+          "name": "IV",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "RightMainVerticalStack"
+        }
+      ]
+    },
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "III",
+          "layout": "HorizontalStack"
+        },
+        {
+          "name": "IV",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "RightMainVerticalStack"
+        }
+      ]
+    }
+  ]
+}
