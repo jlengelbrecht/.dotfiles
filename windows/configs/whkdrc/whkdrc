@@ -5,6 +5,9 @@
 win + o                 : taskkill /f /im whkd.exe; Start-Process whkd -windowStyle hidden # if shell is pwsh / powershell
 win + shift + o         : komorebic reload-configuration
 
+# Restart AutoHotkey (for after gaming)
+win + shift + a         : powershell -WindowStyle Hidden -File "C:\Users\DudeI\repos\.dotfiles\windows\scripts\restart-ahk.ps1"
+
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
 # win + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
