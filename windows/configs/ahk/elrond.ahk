@@ -16,3 +16,6 @@ DesktopIcons(){
 
 ; Win + Enter Terminal
 #Enter::Run("wt.exe")
+
+; Win + Escape to Exit AutoHotkey (for games like Battlefield)
+#Esc::ExitApp
