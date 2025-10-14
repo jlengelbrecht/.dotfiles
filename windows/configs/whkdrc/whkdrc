@@ -72,3 +72,6 @@ win + shift + 3         : komorebic move-to-workspace 2
 win + shift + 4         : komorebic move-to-workspace 3
 win + shift + 5         : komorebic move-to-workspace 4
 win + shift + 6         : komorebic move-to-workspace 5
+
+# Show hotkey cheatsheet
+win + slash         : powershell -WindowStyle Hidden -File "C:\Users\DudeI\repos\.dotfiles\windows\scripts\show-hotkeys.ps1"
